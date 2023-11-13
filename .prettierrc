@@ -2,12 +2,24 @@
   "trailingComma": "none",
   "overrides": [
     {
+      "files": "**/*.{js,jsx}",
+      "options": { "tabWidth": 2 }
+    },
+    {
       "files": "**/lwc/**/*.html",
-      "options": { "parser": "lwc" }
+      "options": { "parser": "babel" }
     },
     {
       "files": "*.{cmp,page,component}",
       "options": { "parser": "html" }
+    },
+    {
+      "files": "**/classes/**/*.cls",
+      "options": { "parser": "apex" , "tabWidth": 4}
+    },
+    {
+      "files": "**/triggers/**/*.cls",
+      "options": { "parser": "apex" , "tabWidth": 4}
     }
   ]
 }
